@@ -8,7 +8,7 @@
     <owners>dieechtenilente</owners>
     <licenseUrl>http://mobaxterm.mobatek.net/license.html</licenseUrl>
     <projectUrl>http://mobaxterm.mobatek.net/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/wmDevCodes/chocolatey-packages/master/icons/MobaXTerm.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/dieechtenilente/chocolatey-packages/master/MobaXTerm.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MobaXterm is enhanced terminal for Windows with an X11 server, SSH client, and several other network tools for remote computing (VNC, RDP, telnet, rlogin). MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box.
 MobaXterm provides useful features for developers, sysadmins, webmasters and advanced computer users:
