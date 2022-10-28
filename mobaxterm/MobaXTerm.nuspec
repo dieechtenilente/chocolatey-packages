@@ -24,5 +24,7 @@ You can also use some of the free plugins in order to extend MobaXterm capabilit
     <releaseNotes>https://mobaxterm.mobatek.net/download-home-edition.html</releaseNotes>
     <copyright>2008 - 2021 Mobatek</copyright>
     <tags>terminal x11 ssh vnc rdp telnet rlogin ftp sftp xdmcp admin</tags>
+	<packageSourceUrl>https://github.com/dieechtenilente/chocolatey-packages/tree/master/mobaxterm</packageSourceUrl>
+	<docsUrl>https://mobaxterm.mobatek.net/documentation.html</docsUrl>
   </metadata>
 </package>
