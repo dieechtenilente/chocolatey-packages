@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mobaxterm</id>
-    <version>22.1.0</version>
+    <version>22.2.0</version>
     <title>MobaXTerm</title>
     <authors>Mobatek</authors>
     <owners>dieechtenilente</owners>
@@ -22,7 +22,7 @@ MobaXterm provides useful features for developers, sysadmins, webmasters and adv
 You can also use some of the free plugins in order to extend MobaXterm capabilities!</description>
     <summary>MobaXterm Home Edidtion. Ultimate toolbox for remote computing</summary>
     <releaseNotes>https://mobaxterm.mobatek.net/download-home-edition.html</releaseNotes>
-    <copyright>2008 - 2021 Mobatek</copyright>
+    <copyright>2008 - 2022 Mobatek</copyright>
     <tags>terminal x11 ssh vnc rdp telnet rlogin ftp sftp xdmcp admin</tags>
 	<packageSourceUrl>https://github.com/dieechtenilente/chocolatey-packages/tree/master/mobaxterm</packageSourceUrl>
 	<docsUrl>https://mobaxterm.mobatek.net/documentation.html</docsUrl>
