@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mobaxterm</id>
-    <version>24.0.0</version>
+    <version>24.1.0</version>
     <title>MobaXTerm</title>
     <authors>Mobatek</authors>
     <owners>dieechtenilente</owners>
