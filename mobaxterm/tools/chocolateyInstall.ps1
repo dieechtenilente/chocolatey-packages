@@ -2,10 +2,10 @@ $ErrorActionPreference = 'Stop';
  
 $packageName  = 'mobaxterm'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.mobatek.net/2522025040602403/MobaXterm_Installer_v25.2.zip'
-$checkSum     = 'cdcf61ffede716ad566fefcbeebda7f02eb6a51d299b8eff5d87988c8e839c3b'
+$url          = 'https://download.mobatek.net/2542025111600034/MobaXterm_Installer_v25.4.zip'
+$checkSum     = 'f273737ab3112c7b79d49bb3ba9fe158a7c7ad44e9f6fa8123104e343669be04'
 $checkSumType = 'SHA256'
-$MsiInstaller = 'MobaXterm_installer_25.2.msi'
+$MsiInstaller = 'MobaXterm_installer_25.4.msi'
  
 $packageArgsZip = @{
   packageName    = $packageName
