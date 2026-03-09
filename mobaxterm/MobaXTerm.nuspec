@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>mobaxterm</id>
-    <version>26.0.0</version>
+    <version>26.1.0</version>
     <title>MobaXTerm</title>
     <authors>Mobatek</authors>
     <owners>dieechtenilente</owners>
     <licenseUrl>http://mobaxterm.mobatek.net/license.html</licenseUrl>
     <projectUrl>http://mobaxterm.mobatek.net/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/dieechtenilente/chocolatey-packages/master/mobaxterm/MobaXTerm.png</iconUrl>
+    <iconUrl>https://mobaxterm.mobatek.net/img/moba/xterm_logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MobaXterm is enhanced terminal for Windows with an X11 server, SSH client, and several other network tools for remote computing (VNC, RDP, telnet, rlogin). MobaXterm brings all the essential Unix commands to Windows desktop, in a single portable exe file which works out of the box.
 MobaXterm provides useful features for developers, sysadmins, webmasters and advanced computer users:
@@ -19,7 +19,9 @@ MobaXterm provides useful features for developers, sysadmins, webmasters and adv
 • easy graphical file transfer using drag and drop during SSH sessions
 • advanced SSH tunnels creation tool (graphical port forwarding builder)
 • tasks automation using scripts or macros
-You can also use some of the free plugins in order to extend MobaXterm capabilities!</description>
+You can also use some of the free plugins in order to extend MobaXterm capabilities!
+
+This document originates from the website mobaxterm.mobatek.net</description>
     <summary>MobaXterm Home Edition. Ultimate toolbox for remote computing</summary>
     <releaseNotes>https://mobaxterm.mobatek.net/download-home-edition.html</releaseNotes>
     <copyright>2008 - 2026 Mobatek</copyright>
