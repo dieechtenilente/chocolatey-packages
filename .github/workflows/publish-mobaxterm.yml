@@ -1,0 +1,46 @@
+name: Build and Publish MobaXterm Chocolatey Package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+    
+      - name: Install Chocolatey
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+          iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    
+      - name: Verify Chocolatey
+        run: choco -v
+    
+      - name: Lint Chocolatey package
+        working-directory: mobaxterm
+        run: choco lint
+    
+      - name: Pack Chocolatey package
+        working-directory: mobaxterm
+        run: choco pack
+    
+      - name: Test install package locally
+        working-directory: mobaxterm
+        run: |
+          $pkg = Get-ChildItem *.nupkg | Select-Object -First 1
+          choco install $pkg.FullName -y --debug --verbose --source .
+    
+      - name: Test uninstall package
+        run: choco uninstall mobaxterm -y
+    
+      # - name: Push package to Chocolatey
+      #   if: success()
+      #   working-directory: mobaxterm
+      #   env:
+      #     CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+      #   run: |
+      #     $pkg = Get-ChildItem *.nupkg | Select-Object -First 1
+      #     choco push $pkg.FullName --source https://push.chocolatey.org/ --api-key $env:CHOCO_API_KEY
