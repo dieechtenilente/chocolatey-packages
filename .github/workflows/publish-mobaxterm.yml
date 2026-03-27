@@ -27,7 +27,8 @@ jobs:
         working-directory: mobaxterm
         run: |
           $pkg = Get-ChildItem *.nupkg | Select-Object -First 1
-          choco install $pkg.FullName -y --debug --verbose --source $pkg.DirectoryName
+          # choco install $pkg.FullName -y --debug --verbose --source $pkg.DirectoryName
+          choco install mobaxterm --version="26.1.0" --source="D:\a\chocolatey-packages\chocolatey-packages\mobaxterm"
     
       - name: Test uninstall package
         run: choco uninstall mobaxterm -y
